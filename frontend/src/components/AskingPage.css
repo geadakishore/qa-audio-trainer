@@ -88,6 +88,10 @@
   color: #2e7d32; /* calm green */
 }
 
+.qa-block.answer p{
+  white-space:pre-line;
+}
+
 .qa-block p {
   color: #333;
   font-size: 15px;
