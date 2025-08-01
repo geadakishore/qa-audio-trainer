@@ -33,7 +33,7 @@ const PostingPage = () => {
         <h2>📝 Post a Question</h2>
 
         <label>Question</label>
-        <input
+        <textarea
           type="text"
           value={questionText}
           onChange={(e) => setQuestionText(e.target.value)}
@@ -42,7 +42,7 @@ const PostingPage = () => {
         />
 
         <label>Answer</label>
-        <input
+        <textarea
           type="text"
           value={answerText}
           onChange={(e) => setAnswerText(e.target.value)}
