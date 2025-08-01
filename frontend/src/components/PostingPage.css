@@ -56,7 +56,7 @@
   display: block;
 }
 
-.posting-form input[type="text"],
+.posting-form textarea,
 .posting-form input[type="file"] {
   width: 100%;
   padding: 14px 16px;
@@ -69,7 +69,7 @@
   transition: all 0.3s ease;
 }
 
-.posting-form input[type="text"]:focus,
+.posting-form textarea:focus,
 .posting-form input[type="file"]:focus {
   border-color: #a58cff;
   box-shadow: 0 0 0 3px rgba(165, 140, 255, 0.2);
