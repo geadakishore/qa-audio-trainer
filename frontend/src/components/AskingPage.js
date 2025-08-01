@@ -51,6 +51,8 @@ const AskingPage = () => {
               <h3>🟠 Question</h3>
               <p>{currentQA.questionText}</p>
             </div>
+          {console.log("Full currentQA object:", currentQA)}
+          {console.log("Audio Path:", currentQA.audioPath)}   
             <audio ref={audioRef} src={currentQA.audioPath} autoPlay controls />
             {showAnswer && (
               <div className="qa-block answer">
