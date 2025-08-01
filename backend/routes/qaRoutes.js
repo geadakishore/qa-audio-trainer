@@ -1,6 +1,7 @@
 const express = require('express');
 const multer = require('multer');
 const Question = require('../models/Question');
+const backendURL='https://qa-audio-trainer.onrender.com/';
 
 const router = express.Router();
 const storage = multer.diskStorage({
@@ -15,7 +16,7 @@ router.post('/', upload.single('audio'), async (req, res) => {
     const newQA = new Question({
       questionText,
       answerText,
-      audioPath: req.file ? req.file.path : ''
+      audioPath: req.file ? `${backendURL}/${req.file.path}`:''
     });
     const savedQA = await newQA.save();
     res.json(savedQA);
