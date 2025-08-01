@@ -6,7 +6,9 @@ const qaRoutes = require('./routes/qaRoutes');
 
 dotenv.config();
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin : 'https://qa-audio-trainer.netlify.app/'
+}));
 app.use(express.json());
 app.use('/uploads', express.static('uploads'));
 app.use('/api/qa', qaRoutes);
