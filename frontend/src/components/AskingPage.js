@@ -15,7 +15,7 @@ const AskingPage = () => {
     }
 
     async function getNewQuestion() {
-      const res = await axios.get('http://localhost:5000/api/qa/random');
+      const res = await axios.get('https://qa-audio-trainer.onrender.com/api/qa/random');
       setCurrentQA(res.data);
       setShowAnswer(false);
       if (audioRef.current) audioRef.current.pause();
