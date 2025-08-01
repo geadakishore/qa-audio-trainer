@@ -15,7 +15,7 @@ const PostingPage = () => {
     if (audio) formData.append('audio', audio);
 
     try {
-      await axios.post('https://qa-audio-trainer.onrender.com//api/qa', formData);
+      await axios.post('https://qa-audio-trainer.onrender.com/api/qa', formData);
       alert('Question saved!');
     } catch (error) {
       console.error(error);
