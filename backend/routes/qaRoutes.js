@@ -16,7 +16,7 @@ router.post('/', upload.single('audio'), async (req, res) => {
     const newQA = new Question({
       questionText,
       answerText,
-      audioPath: req.file ? `${backendURL}/${req.file.path}`:''
+      audioPath: req.file ? `${backendURL}/uploads/${req.file.path}`:''
     });
     const savedQA = await newQA.save();
     res.json(savedQA);
