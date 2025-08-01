@@ -35,12 +35,7 @@ const AskingPage = () => {
   }, [isAsking]);
 
   // ✅ Safe to log here
-  useEffect(()=>{
-  if (currentQA) {
-    console.log("Full currentQA object:", currentQA);
-    console.log("Audio Path:", currentQA.audioPath);
-  }
-  },[currentQA]);
+
 
   return (
     <div className="asking-container">
