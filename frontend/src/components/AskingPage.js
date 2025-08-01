@@ -51,7 +51,7 @@ const AskingPage = () => {
               <h3>🟠 Question</h3>
               <p>{currentQA.questionText}</p>
             </div>
-            <audio ref={audioRef} src={`https://qa-audio-trainer.onrender.com/${currentQA.audioPath}`} autoPlay controls />
+            <audio ref={audioRef} src={currentQA.audioPath} autoPlay controls />
             {showAnswer && (
               <div className="qa-block answer">
                 <h3>✅ Answer</h3>
