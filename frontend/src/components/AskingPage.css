@@ -94,6 +94,7 @@
 
 .qa-block p {
   color: #333;
+  font-weight:bold;
   font-size: 15px;
   margin-top: 4px;
 }
